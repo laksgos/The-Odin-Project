@@ -1,0 +1,136 @@
+body{
+    background-color: honeydew;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+h3{ 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center; 
+
+}
+
+ #wrapper{
+    display: flexbox;
+    height: 100%; 
+    border-radius: 10px; 
+    
+    
+} 
+
+.calc-container{
+    display:grid; 
+    align-content: space-between;
+    width: 100%; 
+    height: 100%; 
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 5px;
+    border: 1px solid black; 
+    background-color:black;
+    border-radius: 3px; 
+    
+}
+
+#display{ 
+        grid-column: span 4;
+        text-align: right;
+        width: 99%; 
+        height: 30px; 
+        border-radius: 3px;
+        background-color: black;
+        border: 1px solid rgb(124, 88, 88);
+        color:white; 
+        align-self: center;
+    }
+
+.first {
+    
+    border-radius: 10px;
+    border: 2px solid black;  
+    cursor:pointer;
+    width:30px; 
+    height: 30px;
+    display: flex; 
+    align-items: center;
+    background-color: darkgray;
+    color: white; 
+    font-weight: bold;
+}
+.second{   
+    border-radius: 10px;
+    border: 2px solid black;  
+    cursor:pointer;
+    width:30px; 
+    height: 30px;
+    display: flex; 
+    align-items: center;
+    background-color: darkslategray; 
+    color:white; 
+}
+
+   
+.third{   
+    border-radius: 10px;
+    border: 2px solid black;  
+    cursor:pointer;
+    width:30px; 
+    height: 30px;
+    display: flex; 
+    align-items: center;
+    background-color: darkslategray; 
+    color:white; }
+        
+.fourth{   
+    border-radius: 10px;
+    border: 2px solid black;  
+    cursor:pointer;
+    width:30px; 
+    height: 30px;
+    display: flex; 
+    align-items: right;
+    background-color: darkslategray; 
+    color:white; }
+
+    .fifth{  
+        text-align:center; 
+        border-radius: 10px;
+        border: 2px solid black;  
+        cursor:pointer;
+        width:30px; 
+        height: 30px;
+        display: flex; 
+        align-items: center;
+        background-color: darkslategray; 
+        color:white; }
+
+#zero{
+    grid-column: span 2; 
+    width: 70px;
+    display:flex;
+    align-content:center;
+
+}
+
+ 
+
+
+
+    #minus , #plus, #multiply, #divide, #equals {
+        background: darkorange;
+        color: white; 
+        font-weight: bold;
+        
+        }
+
+        #minus:hover , #plus:hover, #multiply:hover, #divide:hover, #equals:hover {background-color: lightgray;}
+        button:hover{
+            background-color: lightgray;
+        cursor: pointer;}
+button:active{
+    transform: translateY(1px);
+
+}
+button{
+    display:flex; 
+    justify-content: center;
+}
