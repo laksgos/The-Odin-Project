@@ -13,8 +13,13 @@
             cell.addEventListener("mouseover", function bgChange(){
                 const randomCol="rgb("+random(225)+","+random(225)+","+random(225)+")"; 
                 cell.style.backgroundColor=randomCol; 
+                cell.style.filter=".1";
             });
+
         };
+        if (cell.addEventListener("mouseover") && cell.backgroundColor=="white") {
+            cell.style.filter==.1; 
+        }
 
     };
 
